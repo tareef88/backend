@@ -10,6 +10,17 @@ This project is a rest Api endpoint used by the police and private citizens to h
 - `knex.js` for query builder in TS.
 - `jest` for api testing.
 
+
+Requirements
+[x] The police wants to able to add, edit and remove officers. (See data model suggestion below)
+[x] Private citizens want to be able to report stolen bikes. (See data model suggestion below)
+[x] The system should assign a police offers to handle stolen bike cases as they are being reported.
+        [x] A police officer can only handle one case at a time.
+[x] The police should be able to report bikes as found.
+[x]  When the police finds a bike the case should be marked as resolved and the police officer in charge of the case should be marked as available to take a new case.
+    [x] The system should be able to assign unassigned cases to police officers as they become available.
+[x]  Police and private citizens both want to be able to list the reported bike thefts and their status.
+
 ## How to test
 This project used docker-compose in order to run it you have to have a docker-compose install on your machine.
 - Clone or download the repo from https://github.com/tareef88/backend
